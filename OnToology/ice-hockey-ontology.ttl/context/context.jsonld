@@ -1,0 +1,370 @@
+{
+  "@context" : {
+    "has-name" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#has-name"
+    },
+    "shot-taken-by" : {
+      "@id" : "http://webprotege.stanford.edu/shot-taken-by",
+      "@type" : "@id"
+    },
+    "Penalty-type" : {
+      "@id" : "http://webprotege.stanford.edu/Penalty-type"
+    },
+    "Hi-sticking" : {
+      "@id" : "http://webprotege.stanford.edu/Hi-sticking"
+    },
+    "has-league-name" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#has-league-name"
+    },
+    "Goalkeeper" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Goalkeeper"
+    },
+    "Blocked-shot-event" : {
+      "@id" : "http://webprotege.stanford.edu/Blocked-shot-event"
+    },
+    "Player-on-roster" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Player-on-roster"
+    },
+    "Period" : {
+      "@id" : "http://webprotege.stanford.edu/Period"
+    },
+    "Goaltending-coach" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Goaltending-coach"
+    },
+    "dayOfWeek" : {
+      "@id" : "http://www.w3.org/2006/time#dayOfWeek",
+      "@type" : "@id"
+    },
+    "has-start-year" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#has-start-year"
+    },
+    "DayOfWeek" : {
+      "@id" : "http://www.w3.org/2006/time#DayOfWeek"
+    },
+    "has-person-name" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#has-person-name"
+    },
+    "substitutingPlayer" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#substitutingPlayer",
+      "@type" : "@id"
+    },
+    "Playoff-game" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Playoff-game"
+    },
+    "Video-coach" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Video-coach"
+    },
+    "Early-intermission-end" : {
+      "@id" : "http://webprotege.stanford.edu/Early-intermission-end"
+    },
+    "has-season" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#has-season",
+      "@type" : "@id"
+    },
+    "has-end-year" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#has-end-year"
+    },
+    "Giveaway" : {
+      "@id" : "http://webprotege.stanford.edu/Giveaway"
+    },
+    "Takeaway" : {
+      "@id" : "http://webprotege.stanford.edu/Takeaway"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "has-event-time" : {
+      "@id" : "http://webprotege.stanford.edu/has-event-time"
+    },
+    "Left-Wing" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Left-Wing"
+    },
+    "Head-coach" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Head-coach"
+    },
+    "Center" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Center"
+    },
+    "Fighting" : {
+      "@id" : "http://webprotege.stanford.edu/Fighting"
+    },
+    "General-manager" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#General-manager"
+    },
+    "Team-roster-for-game" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Team-roster-for-game"
+    },
+    "Shot-on-goal-event" : {
+      "@id" : "http://webprotege.stanford.edu/Shot-on-goal-event"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "directlyPrecededBy" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#directlyPrecededBy"
+    },
+    "TimeZone" : {
+      "@id" : "http://www.w3.org/2006/time#TimeZone"
+    },
+    "Assistant-general-manager" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Assistant-general-manager"
+    },
+    "Overtime" : {
+      "@id" : "https://www.ida.liu.se/research/sportsanalytics/2019/2/ice-hockey.owl#Overtime"
+    },
+    "Game-event" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Game-event"
+    },
+    "Shot-event" : {
+      "@id" : "http://webprotege.stanford.edu/Shot-event"
+    },
+    "has-participating-team" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#has-participating-team",
+      "@type" : "@id"
+    },
+    "timeZone" : {
+      "@id" : "http://www.w3.org/2006/time#timeZone",
+      "@type" : "@id"
+    },
+    "attackingTeam" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#attackingTeam",
+      "@type" : "@id"
+    },
+    "winningTeam" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#winningTeam",
+      "@type" : "@id"
+    },
+    "Player" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Player"
+    },
+    "Event" : {
+      "@id" : "http://webprotege.stanford.edu/Event"
+    },
+    "has-team-name" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#has-team-name"
+    },
+    "has-game-event" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#has-game-event",
+      "@type" : "@id"
+    },
+    "Coach" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Coach"
+    },
+    "Game-misconduct" : {
+      "@id" : "http://webprotege.stanford.edu/Game-misconduct"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Person"
+    },
+    "Conditioning-coach" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Conditioning-coach"
+    },
+    "Start-event" : {
+      "@id" : "http://webprotege.stanford.edu/Start-event"
+    },
+    "Action-event" : {
+      "@id" : "http://webprotege.stanford.edu/Action-event"
+    },
+    "Referee" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Referee"
+    },
+    "Chairperson" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Chairperson"
+    },
+    "Preseason-game" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Preseason-game"
+    },
+    "Season-for-league" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Season-for-league"
+    },
+    "directlyFollowedBy" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#directlyFollowedBy"
+    },
+    "Defender" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Defender"
+    },
+    "has-player-on-roster" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#has-player-on-roster",
+      "@type" : "@id"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "Assistant-coach" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Assistant-coach"
+    },
+    "Scout" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Scout"
+    },
+    "Team-roster" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Team-roster"
+    },
+    "Game-end" : {
+      "@id" : "http://webprotege.stanford.edu/Game-end"
+    },
+    "Period-start" : {
+      "@id" : "http://webprotege.stanford.edu/Period-start"
+    },
+    "Period1" : {
+      "@id" : "http://webprotege.stanford.edu/Period1"
+    },
+    "contains-team" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#contains-team",
+      "@type" : "@id"
+    },
+    "Faceoff" : {
+      "@id" : "http://webprotege.stanford.edu/Faceoff"
+    },
+    "President" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#President"
+    },
+    "defendingTeam" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#defendingTeam",
+      "@type" : "@id"
+    },
+    "has-away-team" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#has-away-team",
+      "@type" : "@id"
+    },
+    "ProperInterval" : {
+      "@id" : "http://www.w3.org/2006/time#ProperInterval"
+    },
+    "RBIVBbBPOMP4cqB5H7VUL3D" : {
+      "@id" : "http://webprotege.stanford.edu/RBIVBbBPOMP4cqB5H7VUL3D"
+    },
+    "Regular-season-game" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Regular-season-game"
+    },
+    "Forward" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Forward"
+    },
+    "Game-off" : {
+      "@id" : "http://webprotege.stanford.edu/Game-off"
+    },
+    "Team" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Team"
+    },
+    "Period3" : {
+      "@id" : "http://webprotege.stanford.edu/Period3"
+    },
+    "byTeam" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#byTeam",
+      "@type" : "@id"
+    },
+    "Team-roster-for-season" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Team-roster-for-season"
+    },
+    "shootingPlayer" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#shootingPlayer",
+      "@type" : "@id"
+    },
+    "has-home-team" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#has-home-team",
+      "@type" : "@id"
+    },
+    "Equipment-manager" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Equipment-manager"
+    },
+    "Penalty-event" : {
+      "@id" : "http://webprotege.stanford.edu/Penalty-event"
+    },
+    "Right-Wing" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Right-Wing"
+    },
+    "Team-physician" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Team-physician"
+    },
+    "Missed-shot-event" : {
+      "@id" : "http://webprotege.stanford.edu/Missed-shot-event"
+    },
+    "R9Nxw4673iJct9s1E5ayK4r" : {
+      "@id" : "http://webprotege.stanford.edu/R9Nxw4673iJct9s1E5ayK4r"
+    },
+    "Game" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Game"
+    },
+    "plays-in-season-for-league" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#plays-in-season-for-league",
+      "@type" : "@id"
+    },
+    "Hit" : {
+      "@id" : "http://webprotege.stanford.edu/Hit"
+    },
+    "homePlayer" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#homePlayer",
+      "@type" : "@id"
+    },
+    "has-season-game" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#has-season-game",
+      "@type" : "@id"
+    },
+    "is-season-for" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#is-season-for",
+      "@type" : "@id"
+    },
+    "End-event" : {
+      "@id" : "http://webprotege.stanford.edu/End-event"
+    },
+    "awayPlayer" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#awayPlayer",
+      "@type" : "@id"
+    },
+    "Misconduct" : {
+      "@id" : "http://webprotege.stanford.edu/Misconduct"
+    },
+    "League" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#League"
+    },
+    "Period-end" : {
+      "@id" : "http://webprotege.stanford.edu/Period-end"
+    },
+    "Early-intermission-start" : {
+      "@id" : "http://webprotege.stanford.edu/Early-intermission-start"
+    },
+    "plays-in-league" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#plays-in-league",
+      "@type" : "@id"
+    },
+    "Period2" : {
+      "@id" : "http://webprotege.stanford.edu/Period2"
+    },
+    "occured-in-period" : {
+      "@id" : "http://webprotege.stanford.edu/occured-in-period",
+      "@type" : "@id"
+    },
+    "has-player" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#has-player",
+      "@type" : "@id"
+    },
+    "Shift" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#Shift"
+    },
+    "Tripping" : {
+      "@id" : "http://webprotege.stanford.edu/Tripping"
+    },
+    "has-away-team-roster" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#has-away-team-roster",
+      "@type" : "@id"
+    },
+    "has-home-team-roster" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#has-home-team-roster",
+      "@type" : "@id"
+    },
+    "has-team-roster" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#has-team-roster",
+      "@type" : "@id"
+    },
+    "substitutedPlayer" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#substitutedPlayer",
+      "@type" : "@id"
+    },
+    "has-shirt-number" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#has-shirt-number"
+    },
+    "is-game-for-season" : {
+      "@id" : "http://www.semanticweb.org/patla00/ontologies/2018/4/ice-hockey#is-game-for-season",
+      "@type" : "@id"
+    }
+  }
+}
